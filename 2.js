@@ -4,17 +4,20 @@ const workers = [
     {"name":"Linda","salary":1500}
 ];
 
-let newArray = [];
+
 
 
 function names(workers) {
+    let result = [];
     for (let i = 0; i < workers.length; i++) {
-        if (workers[i].salary > 1000) {
-            newArray.push += workers[i].name
+        let workItem = workers[i];
+        if (workItem.salary > 1000) {
+            result.push(workItem.name);
         }
     }
+    return result;
 }
 
-names(workers);
+;
 
-console.log(newArray);
+console.log(names(workers));
