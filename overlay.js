@@ -7,7 +7,7 @@ const overLayWrapper = document.querySelector('.overlay-wrapper');
 
 btn.addEventListener ("click", function(event) {
     event.preventDefault();
-    /* overLay.style.display = 'flex'; */
+   /*  overLay.style.display = 'flex'; */
     
     const overLay = document.createElement('div');
     overLayWrapper.appendChild(overLay);
@@ -27,16 +27,20 @@ btn.addEventListener ("click", function(event) {
     modalContent.classList.add('modal-content');
     modalContent.textContent = 'Hello World!';
 
+    overLay.addEventListener("click", function(event) {
+        
+        /* overLay.style.display = 'none'; */
+        overLayWrapper.removeChild(overLay);
+
+    })
+
     closeBtn.addEventListener ("click", function(event) {
         event.preventDefault();
         /* overLay.style.display = 'none'; */
         overLayWrapper.removeChild(overLay);
     });
     
-    overLay.addEventListener("click", function(event) {
-        event.preventDefault();
-        overLayWrapper.removeChild(overLay);
-    })
+    
 
 });
 
