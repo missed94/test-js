@@ -47,6 +47,7 @@
 }
 
 .arrowLeft {
+    cursor: pointer;
     font-size: 30px;
     color: red;
     text-decoration: none;
@@ -54,6 +55,7 @@
 }
 
 .arrowRight { 
+    cursor: pointer;
     font-size: 30px;
     color: red;
     text-decoration: none;
