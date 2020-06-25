@@ -111,6 +111,7 @@ height: 30px;
 text-align: center;
 background: #444;
 border-radius: 5px; 
+
 }
 
 .close { 
@@ -126,6 +127,7 @@ color:red;
 border-radius: 50%;
 text-decoration: none;
 background-color: white;
+
 }
 
 .modal-content {
