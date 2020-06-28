@@ -25,8 +25,8 @@ btn.addEventListener("click", function (event) {
   modalContent.classList.add("modal-content");
   modalContent.textContent = "Hello World!";
 
-  overLay.addEventListener("click", function (event) {
-    if(event.target.className == "overlay"){
+  overLay.addEventListener("click", function (e) {
+    if(e.target.className == "overlay"){
       overLayWrapper.removeChild(overLay);
       }
   });

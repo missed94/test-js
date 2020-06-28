@@ -136,3 +136,46 @@ background-color: white;
     color:white;
     
 }
+
+
+
+
+
+
+.color-blocks-wrapper {
+
+ }
+.color-block-container { 
+display: block;
+
+}
+
+.controls { 
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 30px;
+}
+
+.amount-selector { 
+
+}
+
+.blocks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.block {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
