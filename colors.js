@@ -24,20 +24,34 @@ const colorTheBlock = (block, color) => {
   block.style.backgroundColor = color;
 }
 
+let changed = false;
+
 
 colorSelector.addEventListener("change", function(e) {
   const color = e.target.value;
   const items = blocks.querySelectorAll('.block');
 
+changed = !changed;
+
   for (let i = 0; i < items.length; i++) {
 
     const blockNumber = i + 1;
     
-
-    if (blockNumber % 2 != 0) {
+    if (changed) {
+      if (blockNumber % 2 != 0) {
 
       colorTheBlock(items[i], color);
+    } else {
+      colorTheBlock(items[i], '#fff');
     };
-    
+  } else {
+    if (blockNumber % 2 == 0) {
+
+      colorTheBlock(items[i], color);
+    } else {
+      colorTheBlock(items[i], '#fff');
+    };
+
+  }
   }
 });
